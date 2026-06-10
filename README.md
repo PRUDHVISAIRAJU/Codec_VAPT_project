@@ -41,27 +41,27 @@ To analyze a vulnerable web application and identify security misconfigurations,
 ## 📸 Screenshots
 
 ### 🔹 Docker Setup Running
-![Docker Setup](Screenshots/SS01_Docker_PS.png)
+![Docker Setup](Codec_VAPT_Project/screenshots/SS01_Docker_PS.png)
 
 ---
 
 ### 🔹 OWASP Juice Shop Home Page
-![Juice Shop](Screenshots/SS02_JuiceShop_Homepage.png)
+![Juice Shop](Codec_VAPT_Project/screenshots/SS02_JuiceShop_Homepage.png)
 
 ---
 
 ### 🔹 Nmap Service Scan
-![Nmap Scan](Screenshots/SS03_Nmap_Scan.png)
+![Nmap Scan](Codec_VAPT_Project/screenshots/SS03_Nmap_Scan.png)
 
 ---
 
 ### 🔹 Nikto Vulnerability Scan
-![Nikto Scan](Screenshots/SS04_Nikto_Scan.png)
+![Nikto Scan](Codec_VAPT_Project/screenshots/SS04_Nikto_Scan.png)
 
 ---
 
 ### 🔹 Login Page
-![Browser Test](Screenshots/SS05_Login_Page.png)
+![Browser Test](Codec_VAPT_Project/screenshots/SS05_Login_Page.png)
 
 ---
 
