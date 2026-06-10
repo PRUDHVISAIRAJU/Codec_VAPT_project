@@ -1,0 +1,122 @@
+VULNERABILITY ASSESSMENT AND PENETRATION TESTING (VAPT) REPORT
+
+Project Title:
+Vulnerability Assessment and Penetration Testing of OWASP Juice Shop
+
+Prepared By:
+Prudhvi Sai Raju Poranki
+
+Objective:
+The objective of this project is to perform vulnerability assessment and basic penetration testing on the OWASP Juice Shop web application. The assessment aims to identify security weaknesses, analyze potential risks, and provide recommendations for improving the application's security posture.
+
+
+Tools Used:
+
+1. Kali Linux
+
+   * Operating system used for security testing.
+
+2. Docker
+
+   * Used to deploy and run the OWASP Juice Shop application.
+
+3. OWASP Juice Shop
+
+   * Vulnerable web application used as the testing target.
+
+4. Nmap
+
+   * Used for network reconnaissance and service detection.
+
+5. Nikto
+
+   * Used for web server vulnerability assessment and security header analysis.
+
+Methodology:
+
+1. Environment Setup
+
+   * Docker was used to deploy the OWASP Juice Shop web application on Kali Linux.
+
+2. Reconnaissance
+
+   * Nmap was used to identify open ports and running services on the target application.
+
+3. Vulnerability Assessment
+
+   * Nikto was used to scan the application for security misconfigurations and missing security headers.
+
+4. Verification
+
+   * The application was manually accessed through a web browser to verify accessibility and validate findings.
+
+5. Documentation
+
+   * All findings, observations, screenshots, and recommendations were documented for reporting purposes.
+
+
+Findings:
+
+Finding F-001: Open HTTP Service on Port 3000
+
+Risk Level: Informational
+
+Description:
+Nmap scanning identified an active web application running on TCP Port 3000. The service was manually verified through a web browser.
+
+Recommendation:
+Monitor exposed services and ensure only required services are accessible.
+
+Finding F-002: Missing Content Security Policy (CSP) Header
+
+Risk Level: Medium
+
+Description:
+Nikto identified that the Content-Security-Policy security header is missing from application responses.
+
+Recommendation:
+Implement a Content-Security-Policy header to reduce the risk of content injection attacks.
+
+Finding F-003: Missing Referrer-Policy Header
+
+Risk Level: Low
+
+Description:
+Nikto identified that the Referrer-Policy security header is not configured.
+
+Recommendation:
+Configure a Referrer-Policy header to control referral information shared with external websites.
+
+Finding F-004: Missing Strict-Transport-Security (HSTS) Header
+
+Risk Level: Low
+
+Description:
+Nikto identified that the Strict-Transport-Security security header is not configured.
+
+Recommendation:
+Enable HSTS to enforce secure communication and reduce protocol downgrade risks.
+
+
+
+Recommendations:
+
+1. Implement Content Security Policy (CSP) headers to mitigate content injection attacks.
+
+2. Configure Referrer-Policy headers to limit unnecessary information disclosure.
+
+3. Enable Strict-Transport-Security (HSTS) to enforce secure communication over HTTPS.
+
+4. Regularly perform vulnerability assessments and security testing to identify emerging risks.
+
+5. Monitor exposed services and ensure only required services are publicly accessible.
+
+
+
+Conclusion:
+
+A Vulnerability Assessment and Penetration Testing (VAPT) exercise was conducted on the OWASP Juice Shop web application using Kali Linux, Nmap, and Nikto. The assessment successfully identified multiple security-related observations, including missing security headers and exposed services. Appropriate recommendations have been provided to improve the application's security posture. The project enhanced practical knowledge of reconnaissance, vulnerability assessment, verification, documentation, and reporting processes used in cybersecurity testing.
+
+
+
+

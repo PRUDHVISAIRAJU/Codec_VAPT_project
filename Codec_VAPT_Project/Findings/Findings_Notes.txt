@@ -1,0 +1,93 @@
+Finding 1:
+Port 3000/TCP is open.
+
+Service:
+HTTP Web Application
+
+Risk:
+Medium
+
+Description:
+OWASP Juice Shop is accessible through port 3000.
+
+Evidence:
+SS03_Nmap_Scan.png
+
+
+
+Finding ID: F-001
+
+Verification:
+The service was manually accessed through a web browser at http://localhost:3000 and the OWASP Juice Shop application loaded successfully.
+
+Title:
+Open HTTP Service on Port 3000
+
+Description:
+Nmap scan identified an active web application running on TCP Port 3000.
+
+Evidence:
+SS03_Nmap_Scan.png
+
+Risk Level:
+Informational
+
+Recommendation:
+Monitor exposed services and ensure only required services are accessible.
+
+
+
+Finding ID: F-002
+
+Title:
+Missing Content Security Policy (CSP) Header
+
+Description:
+Nikto identified that the Content-Security-Policy header is missing from the web application responses.
+
+Evidence:
+SS04_Nikto_Scan.png
+
+Risk Level:
+Medium
+
+Recommendation:
+Implement a Content-Security-Policy header to reduce the risk of content injection attacks.
+
+
+
+Finding ID: F-003
+
+Title:
+Missing Referrer-Policy Header
+
+Description:
+Nikto identified that the Referrer-Policy security header is not configured.
+
+Evidence:
+SS04_Nikto_Scan.png
+
+Risk Level:
+Low
+
+Recommendation:
+Implement a Referrer-Policy header to control the amount of referral information shared with external websites.
+
+
+
+Finding ID: F-004
+
+Title:
+Missing Strict-Transport-Security Header
+
+Description:
+Nikto identified that the Strict-Transport-Security (HSTS) header is not configured.
+
+Evidence:
+SS04_Nikto_Scan.png
+
+Risk Level:
+Low
+
+Recommendation:
+Enable HSTS to enforce secure HTTPS communication and reduce downgrade attack risks.
